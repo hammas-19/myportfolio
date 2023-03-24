@@ -1240,7 +1240,7 @@ img {
         text-align: initial;
     }
     .project_bg{
-        /* background: none; */
+        background: none;
     }
     .project_container{
         background: linear-gradient(to bottom right, #08b094, #08b094 10%, #5d0cc7);
