@@ -1,6 +1,3 @@
- /*== Wixa Responsive Portfolio ==*/
-    /* By: Dakidarts */
-    /* Website: www.dakidarts.com */
 
 
 
@@ -82,7 +79,7 @@ body.dark-theme{
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
-    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --body-color:#0c0b2c;
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
@@ -445,6 +442,7 @@ img {
 
 .about_info {
     display: flex;
+    margin-top: 20%;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2-5);
 }
@@ -468,6 +466,7 @@ img {
 .about_buttons {
     display: flex;
     justify-content: center;
+    margin-top: 30%;
 }
 
 
@@ -541,11 +540,11 @@ img {
 }
 
 .skills_html {
-    width: 95%;
+    width: 90%;
 }
 
 .skills_css {
-    width: 90%;
+    width: 95%;
 }
 
 .skills_js {
@@ -561,7 +560,7 @@ img {
 }
 
 .skills_node {
-    width: 70%;
+    width: 90%;
 }
 
 .skills_python {
@@ -569,7 +568,7 @@ img {
 }
 
 .skills_firebase {
-    width: 80%;
+    width: 95%;
 }
 
 .skills_photoshop {
@@ -685,16 +684,17 @@ img {
 
 .services_content {
     position: relative;
-    background-color: var(--container-color);
+    background:linear-gradient(to bottom right, #5d0cc7, #280cc7);
     padding: 3rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .15);
-    transition: .3s;
+    transition: all .6s;
 
 }
 
 .services_content:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, .15);
+    background: #a7a5a5;
 }
 
 .services_icon {
@@ -704,19 +704,22 @@ img {
     font-size: 1.5rem;
 }
 
-.servives_title {
+.services_title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
+    color: white !important;
 }
 
 .services_button {
     font-size: var(--small-font-size);
     cursor: pointer;
+    color: white;
 }
 
 .services_button:hover .button_icon {
     transform: translateX(.25rem);
+    color: aqua;
 }
 
 .services_modal {
@@ -823,7 +826,7 @@ img {
 }
 
 .project_bg {
-    background-color: var(--first-color-second);
+    background: linear-gradient(to bottom right, #08b094, #08b094 10%, #5d0cc7);
     padding-top: 3rem;
 }
 
@@ -1094,6 +1097,11 @@ img {
 /* For medium devices */
  
 @media screen and (min-width: 567px){
+    .mystylecontact{
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        }
 
     .home_content{
         grid-template-columns: max-content 1fr 1fr;
@@ -1232,10 +1240,10 @@ img {
         text-align: initial;
     }
     .project_bg{
-        background: none;
+        /* background: none; */
     }
     .project_container{
-        background-color: var(--first-color);
+        background: linear-gradient(to bottom right, #08b094, #08b094 10%, #5d0cc7);
         border-radius: 1rem;
         padding: 3rem 2.5rem 0;
         grid-template-columns: max-content 1fr;
@@ -1266,6 +1274,10 @@ img {
 /* For large devices */
 
 @media screen and (min-width: 1028px){
+    .mystylecontact{
+    display: flex;
+    justify-content: space-between;
+    }
     .header,
     .main,
     .footer_container{
@@ -1302,3 +1314,72 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Stack loader */
+
+.loader2 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-75);
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+  }
+  
+  .words {
+    overflow: hidden;
+  }
+  
+  .word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #6a87fb;
+    animation: spin_4991 8s infinite;
+  }
+  
+  @keyframes spin_4991 {
+    10% {
+      -webkit-transform: translateY(-105%);
+      transform: translateY(-105%);
+    }
+  
+    25% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    35% {
+      -webkit-transform: translateY(-205%);
+      transform: translateY(-205%);
+    }
+  
+    50% {
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-305%);
+      transform: translateY(-305%);
+    }
+  
+    75% {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%);
+    }
+  
+    85% {
+      -webkit-transform: translateY(-405%);
+      transform: translateY(-405%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-400%);
+      transform: translateY(-400%);
+    }
+  }
+  
