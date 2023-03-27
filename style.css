@@ -740,7 +740,9 @@ img {
 
 .services_modal-content {
     position: relative;
-    background-color: var(--container-color);
+    background:linear-gradient(to bottom right, #5d0cc7, #280cc7);
+    
+    color: #fff !important;
     padding: 1.5rem;
     border-radius: .5rem;
     
@@ -766,7 +768,7 @@ img {
     top: 1rem;
     right: 1rem;
     font-size: 1.5rem;
-    color: var(--first-color);
+    color: #fff;
     cursor: pointer;
 }
 
