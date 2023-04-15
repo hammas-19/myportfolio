@@ -442,8 +442,9 @@ img {
 
 .about_info {
     display: flex;
-    margin-top: 20%;
-    justify-content: space-evenly;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 40px;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -466,7 +467,8 @@ img {
 .about_buttons {
     display: flex;
     justify-content: center;
-    margin-top: 30%;
+    margin-top: 5%;
+    border: 2px solid white;
 }
 
 
@@ -1145,7 +1147,7 @@ img {
         margin: 0;
     }
     .section{
-        padding: 6rem 0 2rem;
+        padding: 2rem 0 2rem;
     }
     .section_subtitle{
         margin-bottom: 4rem;
@@ -1205,7 +1207,8 @@ img {
         text-align: initial;
     }
     .about_info{
-        justify-content: space-between;
+        justify-content: center;
+        gap: 50px;
     }
     .about_buttons{
         justify-content: initial;
@@ -1227,7 +1230,7 @@ img {
         font-size: 2rem;
     }
     .services_content{
-        padding: 6rem 0 2rem 2.5rem;
+        padding: 2rem 0 2rem 2.5rem;
     }
     .services_modal-content{
         width: 450px;
